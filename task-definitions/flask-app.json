@@ -1,0 +1,20 @@
+[
+    {
+        "name": "example-flask-app",
+        "image": "109677204672.dkr.ecr.ap-northeast-2.amazonaws.com/test/ecs-flask-app",
+        "essential": true,
+        "portMappings": [
+            {
+                "protocol": "tcp",
+                "containerPort": 5000,
+                "hostPort": 5000
+            }
+        ],
+        "environment": [
+            {
+                "name": "REDIS_HOST",
+                "value": "redis-svc.example.internal"
+            }
+        ]
+    }
+]

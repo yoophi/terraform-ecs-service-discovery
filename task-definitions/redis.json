@@ -1,0 +1,14 @@
+[
+    {
+        "name": "example-redis",
+        "image": "redis:alpine",
+        "essential": true,
+        "portMappings": [
+            {
+                "protocol": "tcp",
+                "containerPort": 6379,
+                "hostPort": 6379
+            }
+        ]
+    }
+]
